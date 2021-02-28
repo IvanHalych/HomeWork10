@@ -24,7 +24,7 @@ namespace PrimeNumberTest
             await Test("primes?from=0&to=5", "200 2 3 5");
             await Test("primes?from=-5&to=1", "200");
             await Test("primes?&to=absd", "400 Invalid argument");
-
+            Console.ReadKey();
         }
 
         public static async Task Test(string uri,string expected)
