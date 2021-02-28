@@ -25,7 +25,7 @@ namespace PrimeNumbers.Controllers
         {
             if ((to == null) || (from == null) || (!int.TryParse(to, out var _to)) || (!int.TryParse(from, out var _from)))
             {
-                return StatusCode(404, "Invalid argument");
+                return StatusCode(400, "Invalid argument");
             }
 
             if (_from > _to)
